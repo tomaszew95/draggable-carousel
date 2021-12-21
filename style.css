@@ -1,0 +1,26 @@
+:root{
+    --carousel-children-rotate: 12deg;
+}
+.dragging-carousel{
+    transition-property: transform !important;
+    transition-timing-function: cubic-bezier(.16,1.08,.38,.98) !important;
+    cursor: grab !important;
+}
+.dragging-carousel:active{
+    cursor: grabbing !important;
+}
+.carousel-children-transition{
+    transition: transform .32s ease !important;
+}
+.carousel-children-scale{
+    transform: scale(0.97) !important;
+}
+.carousel-children-rotate-y{
+    transform: rotateY(var(--carousel-children-rotate)) !important;
+}
+.carousel-children-skew-x{
+    transform: skewX(var(--carousel-children-rotate)) !important;
+}
+.temporary-disabled{
+    display: none;
+}
